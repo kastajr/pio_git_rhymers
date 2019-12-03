@@ -5,16 +5,16 @@ import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
-	public static final int I = 1;
-	public static final int INT = 15;
-	public static final int J = 0;
-	public static final int INT1 = 3;
-	public static final int I1 = 1;
-	public static final int INT2 = 15;
-	public static final int INT3 = 3;
-	public static final int INT4 = 20;
-	public static final int I2 = 0;
-	public static final int INT5 = 3;
+	final public static final int I = 1;
+	final public static final int INT = 15;
+	final public static final int J = 0;
+	final public static final int INT1 = 3;
+	final public static final int I1 = 1;
+	final public static final int INT2 = 15;
+	final public static final int INT3 = 3;
+	final public static final int INT4 = 20;
+	final public static final int I2 = 0;
+	final public static final int INT5 = 3;
 
 	public static void main(String[] args) {
 		Rhymersfactory factory = new DefaultRhymersFactory();

@@ -2,13 +2,13 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int INT = -1;
-    public static final int INT1 = 12;
-    public static final int INT2 = -1;
-    public static final int INT3 = 11;
-    public static final int INT4 = -1;
-    public static final int INT5 = -1;
-    private int[] numbers = new int[INT1];
+    final public static final int INT = -1;
+    final public static final int INT1 = 12;
+    final public static final int INT2 = -1;
+    final public static final int INT3 = 11;
+    final public static final int INT4 = -1;
+    final public static final int INT5 = -1;
+    final private int[] numbers = new int[INT1];
 
     public int total = INT;
 
