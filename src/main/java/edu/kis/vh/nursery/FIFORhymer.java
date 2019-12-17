@@ -6,15 +6,15 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 	
 	@Override
 	public int countOut() {
-		while (!callCheck())
-			
-		temp.countIn(super.countOut());
+		while (!callCheck()){
+			temp.countIn(super.countOut());
+		}
+
+		final int ret = temp.countOut();
 		
-		int ret = temp.countOut();
-		
-		while (!temp.callCheck())
-			
-		countIn(temp.countOut());
+		while (!temp.callCheck()){
+			countIn(temp.countOut());
+		}
 		
 		return ret;
 	}
