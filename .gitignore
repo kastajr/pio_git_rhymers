@@ -1,14 +1,14 @@
 # Ignore Mac system files
-.DS_store
+.DS_store/
 
 # Ignore all text files
-*.txt
+*.txt/
 
 # Ignore created classes
-target
+target/
 
 # Ignore IDE files
-.idea
+.idea/
 
 # Ignore iml
 .iml
