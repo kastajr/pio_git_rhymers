@@ -1,8 +1,6 @@
 package edu.kis.vh.nursery.stack;
 
 public class IntArrayStack implements ListStackInterface {
-    private static final int ARRAY_SIZE = 12;
-    private static final int EMPTY_VALUE = 0;
     private static final int INITIAL_VALUE = 0;
     private final int[] numbers = new int[ARRAY_SIZE];
     private int total = INITIAL_VALUE;

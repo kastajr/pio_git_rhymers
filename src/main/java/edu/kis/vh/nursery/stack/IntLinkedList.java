@@ -28,7 +28,7 @@ public final class IntLinkedList implements ListStackInterface{
     @Override
     public int top() {
         if (isEmpty())
-            return 0;
+            return EMPTY_VALUE;
         return last.getValue();
     }
 
