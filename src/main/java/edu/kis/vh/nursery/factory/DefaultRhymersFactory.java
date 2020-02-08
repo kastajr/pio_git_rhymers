@@ -4,26 +4,43 @@ import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.FIFORhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
 
-public class DefaultRhymersFactory implements Rhymersfactory {
+/**
+ * Class matches the factory design pattern
+ * Creates instances of classes that are inheriting from DefaultCountingOutRhymer
+ */
+public class DefaultRhymersFactory implements RhymersFactory {
+    /**
+     * @return returns new instance of DefaultCountingOutRhymer class
+     */
+    // TODO implement Enum which describes types of Rhymers
+    //  implement static method which takes Enum as argument and returns proper Rhymer
+    @Override
+    public DefaultCountingOutRhymer getStandardRhymer() {
+        return new DefaultCountingOutRhymer();
+    }
 
-	@Override
-	public DefaultCountingOutRhymer getStandardRhymer() {
-		return new DefaultCountingOutRhymer();
-	}
+    /**
+     * @return returns new instance of DefaultCountingOutRhymer class
+     */
+    @Override
+    public DefaultCountingOutRhymer getFalseRhymer() {
+        return new DefaultCountingOutRhymer();
+    }
 
-	@Override
-	public DefaultCountingOutRhymer getFalseRhymer() {
-		return new DefaultCountingOutRhymer();
-	}
+    /**
+     * @return returns new instance of FIFORhymer class
+     */
+    @Override
+    public DefaultCountingOutRhymer getFIFORhymer() {
+        return new FIFORhymer();
+    }
 
-	@Override
-	public DefaultCountingOutRhymer getFIFORhymer() {
-		return new FIFORhymer();
-	}
-
-	@Override
-	public DefaultCountingOutRhymer getHanoiRhymer() {
-		return new HanoiRhymer();
-	}
+    /**
+     * @return returns new instance of HanoiRhymer class
+     */
+    @Override
+    public DefaultCountingOutRhymer getHanoiRhymer() {
+        return new HanoiRhymer();
+    }
 
 }
